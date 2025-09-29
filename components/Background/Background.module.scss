@@ -1,0 +1,23 @@
+.Background {
+  margin-top: -10px;
+  height: 101vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1; // if this causes painting/backdrop issues try z-index: 0 and put page content above it
+
+  /* gradient uses CSS vars — animation and size stay in stylesheet (so not overridden) */
+  background: linear-gradient(-45deg, var(--base, #161616cc), var(--accent, #4B88A2cc), var(--base, #161616cc));
+  background-size: 300% 300%;
+  animation: gradient 30s ease infinite;
+
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  will-change: background-position;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

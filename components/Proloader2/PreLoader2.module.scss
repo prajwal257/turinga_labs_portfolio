@@ -1,0 +1,34 @@
+.PreLoader2 {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   inset: 0;
+    //   background: rgb(0, 0, 0);
+  
+    //   // Create transparent rectangle in the center
+    //   width: 150px;
+    //   height: 150px;
+    //   margin: auto;
+    //   background: transparent;
+    //   box-shadow: 0 0 0 9999px rgb(0, 0, 0);
+    //   pointer-events: auto;
+    // }
+  
+    svg {
+        // transform: scaleY(1.1);
+        height: 100px;
+        width: 100px;
+        // position: relative;
+        z-index: 2;
+        box-shadow: 10px 10px 10px 10000px rgb(0, 0, 0);
+    }
+}
+  

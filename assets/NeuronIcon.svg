@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="300"
+   height="180"
+   viewBox="0 0 300 180"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="NeuronIcon.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="2.3472222"
+     inkscape:cx="99.47929"
+     inkscape:cy="114.81657"
+     inkscape:window-width="1920"
+     inkscape:window-height="1054"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <g
+     id="NeuronIcon"
+     style="fill:#000000">
+    <g
+       id="Layer1"
+       style="fill:#000000">
+      <circle
+         id="Neuron1Layer1"
+         cx="30"
+         cy="30"
+         r="30"
+         fill="#D9D9D9"
+         style="fill:#000000" />
+      <circle
+         id="Neuron2Layer1"
+         cx="30"
+         cy="150"
+         r="30"
+         fill="#D9D9D9"
+         style="fill:#000000" />
+    </g>
+    <g
+       id="Layer2"
+       style="fill:#000000">
+      <circle
+         id="Neuron1Layer2"
+         cx="90"
+         cy="30"
+         r="30"
+         fill="#D9D9D9"
+         style="fill:#000000" />
+      <circle
+         id="Neuron2Layer2"
+         cx="90"
+         cy="90"
+         r="30"
+         fill="#D9D9D9"
+         style="fill:#000000" />
+      <circle
+         id="Neuron3Layer2"
+         cx="90"
+         cy="150"
+         r="30"
+         fill="#D9D9D9"
+         style="fill:#000000" />
+    </g>
+    <circle
+       id="Neuron1Layer3"
+       cx="210"
+       cy="90"
+       r="90"
+       fill="#D9D9D9"
+       style="fill:#000000" />
+  </g>
+</svg>

@@ -1,0 +1,115 @@
+.PreLoader {
+    position: fixed;
+    z-index: 100;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: transparent;
+    pointer-events: none; // Prevents interaction
+  
+    .loader {
+      background-color: black;
+      transition: transform 1s ease, border-radius 1s ease, opacity 1s ease;
+    }
+  
+    .loader:nth-child(1) {
+      transform-origin: top left;
+      border-radius: 0 0 100px 0;
+    }
+  
+    .loader:nth-child(2) {
+      transform-origin: top right;
+      border-radius: 0 0 0 100px;
+    }
+  
+    .loader:nth-child(3) {
+      transform-origin: bottom left;
+      border-radius: 0 100px 0 0;
+    }
+  
+    .loader:nth-child(4) {
+      transform-origin: bottom right;
+      border-radius: 100px 0 0 0;
+    }
+  
+    &.open .loader {
+    //   transform: scaleX(1);
+        opacity: 1;
+    }
+    &.closed .loader:nth-child(1) {
+        // border-radius: 0 0 2000px 0;
+        animation: gridPartOne 1.5s forwards cubic-bezier(0,0,1,.01);
+    }
+    &.closed .loader:nth-child(2){
+        // border-radius: 0 0 0 2000px;
+        animation: gridPartTwo 1.5s forwards cubic-bezier(0,0,1,.01);
+    }
+    &.closed .loader:nth-child(3){
+        // border-radius: 0 2000px 0 0;
+        animation: gridPartThree 1.5s forwards cubic-bezier(0,0,1,.01);
+    }
+    &.closed .loader:nth-child(4){
+        // border-radius: 2000px 0 0 0;
+        animation: gridPartFour 1.5s forwards cubic-bezier(0,0,1,.01);
+    }
+    @keyframes gridPartOne {
+        0%{
+            border-radius: 0 0 100px 0;
+            transform: scaleX(1);
+        }
+        25%{
+            border-radius: 0 0 1000px 0;
+            transform: scaleX(1);
+        }
+        100%{
+            border-radius: 0 0 2000px 0;
+            transform: scaleX(0);
+        }
+    }
+    @keyframes gridPartTwo {
+        0%{
+            border-radius: 0 0 0 100px;
+            transform: scaleX(1);
+        }
+        25%{
+            border-radius: 0 0 0 1000px;
+            transform: scaleX(1);
+        }
+        100%{
+            border-radius: 0 0 0 2000px;
+            transform: scaleX(0);
+        }
+    }
+    @keyframes gridPartThree {
+        0%{
+            border-radius: 0 100px 0 0;
+            transform: scaleX(1);
+        }
+        25%{
+            border-radius: 0 1000px 0 0;
+            transform: scaleX(1);
+        }
+        100%{
+            border-radius: 0 2000px 0 0;
+            transform: scaleX(0);
+        }
+    }
+    @keyframes gridPartFour {
+        0%{
+            border-radius: 100px 0 0 0;
+            transform: scaleX(1);
+        }
+        25%{
+            border-radius: 1000px 0 0 0;
+            transform: scaleX(1);
+        }
+        100%{
+            border-radius: 2000px 0 0 0;
+            transform: scaleX(0);
+        }
+    }
+}
+  

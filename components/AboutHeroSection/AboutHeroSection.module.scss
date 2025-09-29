@@ -1,0 +1,74 @@
+.AboutHeroSection{
+    height: 95vh;
+    box-sizing: border-box;
+    // background-color: #161616;
+    padding: 30vh 0px 10vh 10px;
+    position: relative;
+    border-radius: 0px 0px 250px 0px;
+    animation: delayReveal 1.5s ease forwards;
+    animation-delay: 2.5s;
+    visibility: 0;
+    h1{
+        font-size: 128px;
+        line-height: 124px;
+        font-weight: 300;
+    }
+    p{
+        margin-top: 3vh;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .background{
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
+        background: rgba(16, 16, 16, 0.2);
+        margin: 0px 0px 0px -10px;
+        height: 50vh;
+        width: 99vw;
+        position: relative;
+        // z-index: 1;
+        // background-color: red;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        .gradient{
+            background: #62ff4244;
+            // position: absolute;
+            height: 30vh;
+            width: 100%;
+            // background: linear-gradient(to bottom, #0000, #fff);
+            // z-index: -1;
+        }
+    }
+}
+
+@keyframes delayReveal {
+    0%{
+        visibility: 0;
+    }
+    100%{
+        visibility: 1;
+    }
+}
+
+@media (max-width: 900px){
+    .HeroSection{
+        height: 80vh;
+        padding: 10vh 0px 10vh 10px;
+        h1{
+            font-size: 7rem;
+            line-height: 1;
+        }
+    }
+}
+@media (max-width: 650px){
+    .HeroSection{
+        height: 75vh;
+        padding: 15vh 0px 10vh 10px;
+        border-radius: 0px 0px 150px 0px;
+        h1{
+            font-size: 4.5rem;
+            line-height: 1;
+        }
+    }
+}

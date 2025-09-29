@@ -1,0 +1,13 @@
+.Logo{
+    height: 30px;
+    width: 50px;
+    aspect-ratio: 3 / 5;
+    display: inline;
+    mix-blend-mode:difference;
+    color: white;
+}
+@media (max-width: 900px){
+    .Logo{
+        font-size: 2.5rem;
+    }
+}

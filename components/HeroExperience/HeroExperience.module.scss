@@ -1,0 +1,200 @@
+.Experience {
+    padding: 20px 10px;
+    cursor: pointer;
+
+    .ExperienceInner {
+      overflow: hidden;
+      position: relative;
+      display: grid;
+      grid-template-rows: auto 0fr;
+      transition: grid-template-rows 0.5s ease;
+  
+      .ExperienceContent {
+        position: relative;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1.25fr 0.5fr;
+        padding: 10px 0;
+  
+        h3 {
+          margin: 0;
+          padding: 0;
+          font-size: 0.90rem;
+          font-weight: 400;
+        }
+  
+        h2 {
+          margin: 0;
+          font-size: 1.35rem;
+          font-weight: 500;
+          padding-right: 150px;
+        }
+  
+        .copy {
+          font-size: 1.125rem;
+          line-height: 1.4;
+          padding-right: 150px;
+        }
+  
+        .skills {
+          font-size: 0.85rem;
+          font-style: italic;
+        }
+  
+        .time {
+          font-size: 0.80rem;
+          text-align: right;
+        }
+      }
+  
+      .ExperienceImage {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1.25fr 0.5fr;
+        gap: 5px;
+        overflow: hidden;
+        opacity: 0;
+        transition: height 0.5s ease, opacity 0.5s ease;
+  
+        img {
+          height: 67px;
+          width: 100px;
+          background-color: black;
+          object-fit: cover;
+        }
+  
+        .ExperienceImageLogo {
+          display: flex;
+          gap: 5px;
+  
+          img {
+            height: 90px;
+            width: 160px;
+          }
+  
+          img:nth-child(2) {
+            height: 67px;
+            width: 100px;
+          }
+        }
+  
+        .ExperienceImageRole {
+          display: flex;
+          gap: 5px;
+  
+          img {
+            height: 135px;
+            width: 240px;
+          }
+  
+          img:nth-child(2) {
+            height: 90px;
+            width: 160px;
+          }
+        }
+      }
+    }
+  
+    &:hover {
+    //   background-color: white;
+    //   color: black;
+  
+      .ExperienceInner {
+        grid-template-rows: auto 1fr;
+  
+        .ExperienceImage {
+          height: auto;
+          opacity: 1;
+        }
+  
+        .ExperienceContent {
+          h2,
+          .copy {
+            // color: black;
+          }
+        }
+      }
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .Experience {
+      .ExperienceInner {
+        .ExperienceContent {
+          grid-template-columns: 1fr 1fr;
+          h2,
+          .copy {
+            padding-right: 50px;
+          }
+        }
+  
+        .ExperienceImage {
+          grid-template-columns: 1fr;
+          .ExperienceImageLogo,
+          .ExperienceImageRole {
+            flex-direction: column;
+            align-items: center;
+  
+            img,
+            img:nth-child(2) {
+              width: 100%;
+              max-width: 220px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .Experience {
+      padding: 15px 10px;
+  
+      .ExperienceInner {
+        .ExperienceContent {
+          grid-template-columns: 1fr;
+          text-align: left;
+          gap: 10px;
+  
+          h3{
+            font-size: 1.25rem;
+          }
+
+          h2 {
+            font-size: 1.75rem;
+            padding: 0px;
+          }
+  
+          .copy {
+            font-size: 1rem;
+            padding-right: 0;
+          }
+  
+          .skills,
+          .time {
+            font-size: 1rem;
+            text-align: left;
+          }
+        }
+  
+        .ExperienceImage {
+            margin-top: 15px;
+          grid-template-columns: 1fr 1fr;
+          gap: 5px;
+          .ExperienceImageLogo,
+          .ExperienceImageRole {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            img,
+            img:nth-child(2) {
+              width: 100%;
+              max-width: 180px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  

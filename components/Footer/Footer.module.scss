@@ -1,0 +1,20 @@
+.Footer{
+    margin-top: 30vh;        
+    position: relative;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1.25fr 0.5fr;  
+    padding: 0px 10px 0px 0px;
+    .Logo{
+        margin: 0px 0px 20px 0px;
+        // height: 100px;
+        mix-blend-mode:difference;
+        color: white;
+    }
+    .FooterLinksRow1{
+        grid-column: 3 / span 1;
+    }
+    .FooterLinksRow2{
+        text-align: right;
+        grid-column: 4 / span 1;
+    }
+}

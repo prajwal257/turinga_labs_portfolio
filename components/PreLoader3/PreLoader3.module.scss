@@ -1,0 +1,48 @@
+.preloaderWrapper{
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    gap: 10px;
+    background-color: black;
+    animation: opacityAnimation 1ms forwards;
+    animation-delay: 3.4s;
+    backdrop-filter: invert(1);
+    .loaderIcon{
+        fill: #fff;
+        // backdrop-filter: invert(1);
+        animation: loadingAnimation 1.5s ease-in-out forwards;
+        animation-delay: 2s;
+    }
+    @keyframes loadingAnimation {
+        0%{
+            fill: #fff;
+            transform: scale(1);
+            // opacity: 1;
+        }
+        25%{
+            fill: #161616;
+            transform: scale(0.80);
+        }
+        99%{
+            opacity: 1;
+            transform: scale(50);
+        }
+        100%{
+            fill: rgb(0, 0, 75);
+            opacity: 0;
+        }
+    }
+    @keyframes opacityAnimation {
+        0%{
+            opacity: 1;
+        }
+        100%{
+            opacity: 0;
+        }
+    }
+}

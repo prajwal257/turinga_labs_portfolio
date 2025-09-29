@@ -1,0 +1,117 @@
+.HeroProject{
+    margin-left: -1px;
+    padding: 40px 10px 40px 10px;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 0fr;
+    transition: grid-template-rows 0.5s ease;
+    .HeroProjectContent{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1.25fr 0.5fr;
+        h3{
+            font-size: 1.25rem;
+            padding: 0px;
+        }
+        h4{
+            font-size: 1rem;
+        }
+        h5{
+            font-size: 1.125rem;
+            padding-right: 140px;
+        }
+        h6{
+            text-align: right;
+            padding-right: 10px;
+        }
+    }
+    .ProjectThumbnails{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1.25fr 0.5fr;
+        gap: 5px;
+        overflow: hidden;
+        opacity: 0;
+        transition: height 0.5s ease, opacity 0.5s ease;
+    
+        img {
+            height: 67px;
+            width: 100px;
+            background-color: black;
+            object-fit: cover;
+        }
+    
+        .ProjectThumbnails1 {
+            grid-column: 2 / span 1;
+            display: flex;
+            gap: 5px;
+    
+            img {
+            height: 90px;
+            width: 160px;
+            }
+    
+            img:nth-child(2) {
+            height: 67px;
+            width: 100px;
+            }
+        }
+    
+        .ProjectThumbnails2 {
+            grid-column: 3 / span 1;
+            display: flex;
+            gap: 5px;
+    
+            img {
+            height: 135px;
+            width: 240px;
+            }
+    
+            img:nth-child(2) {
+            height: 90px;
+            width: 160px;
+            }
+        }
+    }
+}
+.HeroProject:hover{
+    // background-color: white;
+    // color: #161616;
+    grid-template-rows: auto 1fr;
+    .ProjectThumbnails{
+        height: auto;
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 900px){
+    .HeroProject{
+        padding: 10px;
+        .HeroProjectContent {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            h3{
+                grid-column: 1 / span 2;
+                grid-row: 1 / span 1;
+            }
+            h4{
+                grid-column: 1 / span 1;
+                grid-row: 2 / span 1;
+            }
+            h5{
+                padding-right: 0px;
+                grid-column: 1 / span 2;
+                grid-row: 3 / span 4;
+            }
+            h6{
+                grid-column: 2 / span 1;
+                grid-row: 2 / span 5;
+            }
+        }
+        .ProjectThumbnails{
+            display: none;
+        }
+    }
+}

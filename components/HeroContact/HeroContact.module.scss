@@ -1,0 +1,68 @@
+.HeroContact{
+    padding: 10px;
+    // background-color: #161616;
+    position: relative;
+    height: 60vh;
+    .contactForm{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1.25fr 0.5fr;
+        h4{
+            font-size: 36px;
+            font-weight: 600;
+            // margin-bottom: 10vh;
+            grid-column: 2/ span 1;
+        }
+        .form{
+            grid-column: 3 / span 1;
+            display: grid;
+            grid-template-rows: 1fr 2fr 1fr;
+            gap: 10px;
+            .messageInput, .mailInput{
+                display: grid;
+                // grid-template-rows: 1fr 1fr 1fr;
+                height: 100px;
+                gap: 10px;
+                label{
+                    font-size: 1.0625rem;
+                }
+                input{
+                    text-align: left;
+                    width: 100%;
+                    height: 50px;
+                    background-color: #1b1b1b;
+                    border-bottom: 1px solid darkgrey;
+                    padding: 15px;
+                    border-radius: 2px;
+                }
+                input:active{
+                    border: 1px solid grey;
+                    border-radius: 0px;
+                }
+            }
+            .messageInput{
+                input{
+                    height: 150px;
+                }
+            }
+            .SubmitButton{
+                height: 50px;
+                width: 100px;
+                background-color: blue;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .HeroContact{
+        padding: 10vh 10px 10vh 10px;
+        .contactForm{
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 650px){
+    .HeroContact{
+    }
+}
