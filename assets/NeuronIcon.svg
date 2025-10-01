@@ -24,7 +24,7 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="2.3472222"
-     inkscape:cx="99.47929"
+     inkscape:cx="99.266273"
      inkscape:cy="114.81657"
      inkscape:window-width="1920"
      inkscape:window-height="1054"
@@ -34,7 +34,10 @@
      inkscape:current-layer="svg1" />
   <g
      id="NeuronIcon"
-     style="fill:#000000">
+     style="fill:#000000"
+     inkscape:export-filename="NeuronIcon.png"
+     inkscape:export-xdpi="192"
+     inkscape:export-ydpi="192">
     <g
        id="Layer1"
        style="fill:#000000">

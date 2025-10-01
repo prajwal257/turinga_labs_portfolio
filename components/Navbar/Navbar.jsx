@@ -11,7 +11,7 @@ export default function Navbar() {
                 <Link href="/blogs" className={styles.NavbarElement}>Blogs,</Link>
                 <Link href="/contact" className={styles.NavbarElement}>Contact,</Link>
             </div>
-            <Link href="/login" className={styles.NavbarElement}>Resume</Link>
+            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" className={styles.NavbarElement}>Résumé</Link>
         </div>
     );
 }

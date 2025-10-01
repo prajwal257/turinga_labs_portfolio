@@ -1,14 +1,17 @@
 import React from 'react'
 import styles from './HeroExperience.module.scss'
 
-function HeroExperience({firmName, title, time, copy, skills, index}) {
+function HeroExperience({firmName, title, time, copy, copyLong, skills, index}) {
     return (
         <div className={styles.Experience} id={`Experience-${index+1}`}>
           <div className={styles.ExperienceInner}>
             <div className={styles.ExperienceContent}>
               <h3>{firmName}</h3>
               <h2>{title}</h2>
-              <p className={styles.copy}>{copy}</p>
+              <div className={styles.copyDesc}>
+                <p className={styles.copy}>{copy}</p>
+                <p className={styles.copyLong}>{copyLong}</p>
+              </div>
               <p className={styles.time}>{time}</p>
               {/* <p className={styles.skills}>{skills}</p> */}
             </div>

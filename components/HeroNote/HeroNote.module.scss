@@ -1,9 +1,10 @@
 .HeroNote{
     padding: 50vh 10px 50vh 10px;
     // background-color: #161616;
-    border-radius: 0px 250px 0px 0px;
+    // border-radius: 0px 250px 0px 0px;
     display: grid;
     grid-template-columns: 0.5fr 1fr 1.25fr 0.5fr;
+    background: linear-gradient(to bottom, #ffffff00, var(--background));
     h3{
         grid-column: 2 /span 2;
         font-size: 28px;
@@ -21,7 +22,7 @@
 @media (max-width: 650px){
     .HeroNote{
         padding: 20vh 10px 50vh 10px;
-        border-radius: 0px 150px 0px 0px;
+        // border-radius: 0px 150px 0px 0px;
         font-size: 28px;
         line-height: 36px;
         h3{

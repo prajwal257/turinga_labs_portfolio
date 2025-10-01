@@ -1,11 +1,12 @@
 import React from 'react'
 import styles from "./HeroBlog.module.scss"
+import Link from 'next/link'
 
 function HeroBlog({index, title, description, link, date, readTime}) {
   return (
-    <div className={styles.HeroBlog}>
+    <Link href={`/blogs/${index}`} className={styles.HeroBlog}>
         <div className="BlogThumbnail">
-            <img src={`turinga_labs_portfolio/assets/logo-${index+1}.jpeg`} alt={title} />
+            <img src={`assets/logo-${index+1}.jpeg`} alt={title} />
         </div>
         <div className="BlogInner">
             <h5>{title}</h5>
@@ -13,7 +14,7 @@ function HeroBlog({index, title, description, link, date, readTime}) {
             {/* <p>{link}</p> */}
             <p>{date} | {readTime}</p>
         </div>
-    </div>
+    </Link>
   )
 }
 

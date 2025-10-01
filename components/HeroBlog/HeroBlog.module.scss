@@ -1,5 +1,8 @@
 .HeroBlog{
-    border-bottom: 1px solid grey;
+    // border: 1px solid lightgreen;
+    border-radius: 5px;
+    padding: 20px;
+    // transition: all 0.25s ease-in-out;
     h5{
         font-size: 24px;
         margin: 10px 0px 5px 0px;
@@ -7,4 +10,13 @@
     p{
         margin-bottom: 20px;
     }
+    .BlogThumbnail{
+        img{
+            border-radius: 5px;
+        }
+    }
+}
+.HeroBlog:hover{
+    border: 1px solid lightgreen;
+    background: linear-gradient(to right, var(--background), rgba(144, 238, 144, 0.4), var(--background));
 }

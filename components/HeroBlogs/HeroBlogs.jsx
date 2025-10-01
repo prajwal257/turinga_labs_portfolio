@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from "./HeroBlogs.module.scss"
 import HeroBlog from '../HeroBlog/HeroBlog'
+import blogs from '../../src/data/blogs'
 
 function Blogs() {
   const Blogs = [
@@ -23,7 +24,7 @@ function Blogs() {
     <div className={styles.HeroBlogs}>
       <h3>Blogs</h3>
       <div className={styles.BlogsContent}>
-        {Blogs.map((blog, index) => (
+        {blogs.map((blog, index) => (
             <HeroBlog key={index} {...blog} index={index} />
         ))}
       </div>

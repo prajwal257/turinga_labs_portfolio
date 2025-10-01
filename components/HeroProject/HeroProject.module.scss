@@ -1,9 +1,10 @@
 .HeroProject{
     margin-left: -1px;
-    padding: 40px 10px 40px 10px;
+    padding: 20px;
     overflow: hidden;
     position: relative;
     display: grid;
+    border-radius: 5px;
     grid-template-rows: auto 0fr;
     transition: grid-template-rows 0.5s ease;
     .HeroProjectContent{
@@ -78,6 +79,8 @@
     // background-color: white;
     // color: #161616;
     grid-template-rows: auto 1fr;
+    border: 1px solid lightgreen;
+    background: linear-gradient(to right, var(--background), rgba(144, 238, 144, 0.4), var(--background));
     .ProjectThumbnails{
         height: auto;
         opacity: 1;

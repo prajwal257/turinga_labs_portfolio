@@ -1,14 +1,15 @@
 import styles from "./HeroExperiences.module.scss";
 import HeroExperience from "../HeroExperience/HeroExperience";
 
-function HeroExperiences() {
+function HeroExperiences(systemTheme) {
 
   const experiences = [
     { 
       "firmName": "IBM India Pvt. Ltd.",
       "title": "Automation Consultant: RPA Developer",
       "time": "Feb 2024 – Present", 
-      "copy": "Leading end-to-end RPA solutions using UiPath to automate repetitive business workflows for SunPharma. Collaborated with stakeholders to identify automation candidates and deliver high-impact solutions in a regulated environment.", 
+      "copy": "Leading end-to-end RPA solutions using UiPath to automate repetitive business workflows.",
+      "copyLong": "Collaborated with stakeholders to identify automation candidates and deliver high-impact solutions in a regulated environment.", 
       "skills": "UiPath; Python; SQL; Process Discovery;"
     },
     { 

@@ -1,13 +1,14 @@
 .Experience {
-    padding: 20px 10px;
+    padding: 20px;
     cursor: pointer;
-
+    border-radius: 5px;
+    border: 0px;
     .ExperienceInner {
       overflow: hidden;
       position: relative;
       display: grid;
       grid-template-rows: auto 0fr;
-      transition: grid-template-rows 0.5s ease;
+      transition: grid-template-rows 0.25s ease;
   
       .ExperienceContent {
         position: relative;
@@ -28,13 +29,22 @@
           font-weight: 500;
           padding-right: 150px;
         }
-  
-        .copy {
-          font-size: 1.125rem;
-          line-height: 1.4;
-          padding-right: 150px;
+        .copyDesc{
+          display: grid;
+          gap: 1rem;
+          .copy {
+            font-size: 1.125rem;
+            line-height: 1.4;
+            padding-right: 150px;
+          }
+          .copyLong{
+            font-size: 1.125rem;
+            line-height: 1.4;
+            padding-right: 150px;
+            opacity: 0;
+          }
         }
-  
+
         .skills {
           font-size: 0.85rem;
           font-style: italic;
@@ -106,27 +116,33 @@
         }
   
         .ExperienceContent {
-          h2,
-          .copy {
-            // color: black;
+          .copyDesc {
+            .copyLong{
+              opacity: 1;
+            }
           }
         }
       }
     }
   }
+  .Experience:hover{
+      border: 1px solid lightgreen;
+      background: linear-gradient(to right bottom, var(--background), rgba(144, 238, 144, 0.4), var(--background));
+  }
   
   /* Responsive Styles */
   @media (max-width: 1024px) {
     .Experience {
+      padding: 10px;
       .ExperienceInner {
         .ExperienceContent {
           grid-template-columns: 1fr 1fr;
-          h2,
-          .copy {
-            padding-right: 50px;
+          .copyDesc{
+            .copy, .copyLong{
+              padding-right: 0px;
+            }
           }
         }
-  
         .ExperienceImage {
           grid-template-columns: 1fr;
           .ExperienceImageLogo,

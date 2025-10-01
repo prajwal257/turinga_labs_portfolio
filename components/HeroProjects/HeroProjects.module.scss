@@ -1,12 +1,12 @@
 .HeroProjects{
-    // background-color: #161616;
-    margin-top: 20vh;
+    background-color: var(--background);
+    padding: 20vh 20px 20px 20px;
     height: 100vh;
     // padding: 10px;
     h3{
         // color: black;
         font-size: 36px;
         // font-weight: 500;
-        padding: 10px;
+        padding: 10px 0px 40px -10px;
     }
 }
