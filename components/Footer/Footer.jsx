@@ -1,20 +1,39 @@
-import React from 'react';
+"use client";
+import React, { useEffect, useState } from "react";
 import styles from './Footer.module.scss';
+import Link from "next/link";
+import Marquee from "react-fast-marquee";
 
 function Footer() {
+  const [indiaTime, setIndiaTime] = useState("");
+
+  useEffect(() => {
+    const updateTime = () => {
+      const now = new Date();
+      setIndiaTime(
+        now.toLocaleTimeString("en-IN", { timeZone: "Asia/Kolkata" })
+      );
+    };
+    updateTime();
+    const interval = setInterval(updateTime, 1000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className={styles.Footer}>
-        <img src="assets/NeuronIcon.png" alt="companyLogo" />
-        <div className={styles.FooterLinksRow1}>
-            <ul>About</ul>
-            <ul>Projects</ul>
-            <ul>Work</ul>
-        </div>
-        <div className={styles.FooterLinksRow2}>
-            <ul>About</ul>
-            <ul>Projects</ul>
-            <ul>Work</ul>
-        </div>
+      <h6>Mumbai (IST)<br></br> {indiaTime.toUpperCase()}</h6>
+      <div className={styles.ContactLinks}>
+        <Link href="linkedin.com">
+          <img src="./assets/LinkArrowIcon.png" alt="Link Icon" />
+          LinkedIn
+        </Link>
+        <Link href="Email.com">Email</Link>
+      </div>
+      <Link href="github.com" className={styles.Github}>GitHub</Link>
+      <div className={styles.Acknowledgement}>
+        <h6>Made in India, <br></br> by Prajwal Dwivedi.</h6>
+      </div>
+      <Marquee className={styles.CopyrightMarkquee}>© Prajwal Dwivedi Portfolio</Marquee>
     </div>
   )
 }

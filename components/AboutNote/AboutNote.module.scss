@@ -1,0 +1,10 @@
+.AboutNote{
+    padding: 20vh 20px 10vh 20px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    h3{
+        grid-column: 2 / span 1;
+        font-size: 1.25rem;
+    }
+}

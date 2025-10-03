@@ -8,24 +8,27 @@
     justify-content: center;
     flex-flow: column;
     gap: 10px;
-    background-color: black;
+    background-color: var(--foreground);
+    color: var(--background);
     animation: opacityAnimation 1ms forwards;
     animation-delay: 3.4s;
     backdrop-filter: invert(1);
+    h2{
+    }
     .loaderIcon{
-        fill: #fff;
+        fill: var(--background);
         // backdrop-filter: invert(1);
         animation: loadingAnimation 1.5s ease-in-out forwards;
         animation-delay: 2s;
     }
     @keyframes loadingAnimation {
         0%{
-            fill: #fff;
+            fill: var(--background);
             transform: scale(1);
             // opacity: 1;
         }
         25%{
-            fill: #161616;
+            // fill: #f5f5f5;
             transform: scale(0.80);
         }
         99%{
@@ -33,7 +36,7 @@
             transform: scale(50);
         }
         100%{
-            fill: rgb(0, 0, 75);
+            fill: var(--background);
             opacity: 0;
         }
     }

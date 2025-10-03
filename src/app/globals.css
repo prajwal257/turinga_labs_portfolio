@@ -5,12 +5,16 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --offbackground: #f5f5f5;
+  --offforeground: #161616;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+    --offbackground: #161616;
+    --offforeground: #f5f5f5;
   }
 }
 
@@ -19,6 +23,30 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-body::-webkit-scrollbar{
-  display: none;
+
+/* body::-webkit-scrollbar{
+  width: 5px;
+} */
+/* 
+.lenis::-webkit-scrollbar-button{
+  background-color: var(--foreground);
+} */
+
+@keyframes clipRevealUp {
+  from {
+    clip-path: inset(100% 0 0 0); /* fully clipped from bottom */
+    transform: translateY(20px);  /* slide upward */
+    /* opacity: 0; */
+  }
+  to {
+    clip-path: inset(0 0 0 0);    /* fully visible */
+    transform: translateY(0);
+    /* opacity: 1; */
+  }
+}
+
+.clip-reveal-up {
+  animation: clipRevealUp both;
+  animation-timeline: view();
+  /* animation-range: entry 100% entry 25%; */
 }

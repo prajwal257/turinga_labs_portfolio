@@ -6,12 +6,10 @@ export default function Navbar() {
     return(
         <div className={styles.navbar}>
             <div className="leftSideMenu">
-                <Link href="/"><Logo className={styles.NavbarElement}/></Link>
-                <Link href="/about" className={styles.NavbarElement}>About,</Link>
-                <Link href="/blogs" className={styles.NavbarElement}>Blogs,</Link>
-                <Link href="/contact" className={styles.NavbarElement}>Contact,</Link>
+                <Link href="/" className={styles.NavbarElement}>Home</Link>
+                <Link href="/about" className={styles.NavbarElement}>About</Link>
             </div>
-            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" className={styles.NavbarElement}>Résumé</Link>
+            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" className={`${styles.NavbarElement} ${styles.CTA}`}>Download Résumé</Link>
         </div>
     );
 }

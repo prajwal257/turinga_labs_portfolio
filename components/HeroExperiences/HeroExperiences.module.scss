@@ -1,16 +1,66 @@
 .HeroExperiences{
-    padding-bottom: 250px;
-    // height: 100vh;
-    // color: #161616;
-    background-color: var(--background);
-    // border-radius: 0px 0px 0px 250px;
+    position: relative;
+    padding: 20px 10px 30vh 20px;
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
     h3{
-        font-size: 36px;
-        // font-weight: 600;
-        padding: 10px;
-        // margin-bottom: 10vh;
+        grid-column: 1/ span 1;
+        font-size: 1.75rem;
     }
     .ExperiencesList{
-        padding: 10px;
+        grid-column: 2 / span 2;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        // .experienceContainer:nth-child(1){
+        //     grid-column: 1 / span 2;
+        // }
+        @keyframes textReveal {
+        0%{
+            opacity: 0;
+            // transform: translateY(0px);
+        }
+        100%{
+            opacity: 1;
+            // transform: translateY(10px);
+        }
+    }
+    }
+}
+
+@media(max-width: 1025px){
+    .HeroExperiences{
+        h3{
+            margin-bottom: 2rem;
+            grid-column: 1/ span 4;
+            font-size: 2.5rem;
+        }
+        .ExperiencesList{
+            grid-column: 1 / span 4;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+            // .experienceContainer:nth-child(1){
+            //     grid-column: 1 / span 2;
+            // }
+        }
+    }
+}
+@media(max-width: 650px){
+    .HeroExperiences{
+        h3{
+            margin-bottom: 2rem;
+            grid-column: 1/ span 4;
+            font-size: 1.5rem;
+        }
+        .ExperiencesList{
+            grid-column: 1 / span 4;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+            // .experienceContainer:nth-child(1){
+            //     grid-column: 1 / span 2;
+            // }
+        }
     }
 }

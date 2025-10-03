@@ -1,27 +1,45 @@
 .HeroNote{
-    padding: 50vh 10px 50vh 10px;
+    padding: 40vh 20px 40vh 20px;
     // background-color: #161616;
     // border-radius: 0px 250px 0px 0px;
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1.25fr 0.5fr;
+    grid-template-columns: 20% 60% 20%;
     background: linear-gradient(to bottom, #ffffff00, var(--background));
     h3{
-        grid-column: 2 /span 2;
-        font-size: 28px;
-        line-height: 42px;
+        grid-column: 2 /span 1;
+        font-size: 1.75rem;
+        line-height: 2.5rem;
         // padding-right: 150px;
+        animation: textReveal;
+        animation-timeline: view();
+        // animation-range: entry 0% entry 25%;
+    }
+    @keyframes textReveal {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 }
 
-@media (max-width: 900px){
+@media (max-width: 1025px){
     .HeroNote{
-        padding: 50vh 10px 50vh 10px;
+        padding: 50vh 5rem 50vh 5rem;
+        h3{
+            grid-column: 1 /span 3;
+            font-size: 2rem;
+            line-height: 2.75rem;
+        }
     }
 }
 
 @media (max-width: 650px){
     .HeroNote{
-        padding: 20vh 10px 50vh 10px;
+        padding: 20vh 20px 50vh 20px;
         // border-radius: 0px 150px 0px 0px;
         font-size: 28px;
         line-height: 36px;

@@ -1,216 +1,151 @@
-.Experience {
-    padding: 20px;
-    cursor: pointer;
+.Experience{
+  // padding-bottom: 10vh;
+    margin-top: 10px;
+  .ExperienceImageContainer{
+    position: relative;
+    // background-color: var(--foreground);
+    overflow: hidden;
     border-radius: 5px;
-    border: 0px;
-    .ExperienceInner {
-      overflow: hidden;
-      position: relative;
-      display: grid;
-      grid-template-rows: auto 0fr;
-      transition: grid-template-rows 0.25s ease;
-  
-      .ExperienceContent {
-        position: relative;
-        display: grid;
-        grid-template-columns: 0.5fr 1fr 1.25fr 0.5fr;
-        padding: 10px 0;
-  
-        h3 {
-          margin: 0;
-          padding: 0;
-          font-size: 0.90rem;
-          font-weight: 400;
-        }
-  
-        h2 {
-          margin: 0;
-          font-size: 1.35rem;
-          font-weight: 500;
-          padding-right: 150px;
-        }
-        .copyDesc{
-          display: grid;
-          gap: 1rem;
-          .copy {
-            font-size: 1.125rem;
-            line-height: 1.4;
-            padding-right: 150px;
-          }
-          .copyLong{
-            font-size: 1.125rem;
-            line-height: 1.4;
-            padding-right: 150px;
-            opacity: 0;
-          }
-        }
-
-        .skills {
-          font-size: 0.85rem;
-          font-style: italic;
-        }
-  
-        .time {
-          font-size: 0.80rem;
-          text-align: right;
-        }
-      }
-  
-      .ExperienceImage {
-        display: grid;
-        grid-template-columns: 0.5fr 1fr 1.25fr 0.5fr;
-        gap: 5px;
-        overflow: hidden;
+    margin-bottom: -10px;
+    img{
+      height: 2.5rem;
+      // clip-path: polygon(0% 15%, 40% 15%, 35% 0%, 45% 0%, 50% 15%, 55% 0%, 65% 0%, 60% 15%, 100% 15%, 100% 100%, 0% 100%);
+      // position: absolute;
+      // height: 100%;
+      width: auto;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+      // animation: imageReveal 1s ease-out both;
+      // animation-timeline: view();
+    }
+    @keyframes imageReveal {
+      from {
+        // transform: translate(-50%, -50%) scale(1.25);
         opacity: 0;
-        transition: height 0.5s ease, opacity 0.5s ease;
-  
-        img {
-          height: 67px;
-          width: 100px;
-          background-color: black;
-          object-fit: cover;
-        }
-  
-        .ExperienceImageLogo {
-          display: flex;
-          gap: 5px;
-  
-          img {
-            height: 90px;
-            width: 160px;
-          }
-  
-          img:nth-child(2) {
-            height: 67px;
-            width: 100px;
-          }
-        }
-  
-        .ExperienceImageRole {
-          display: flex;
-          gap: 5px;
-  
-          img {
-            height: 135px;
-            width: 240px;
-          }
-  
-          img:nth-child(2) {
-            height: 90px;
-            width: 160px;
-          }
-        }
+      }
+      to {
+        // transform: translate(-50%, -50%) scale(1);
+        opacity: 1;
       }
     }
-  
-    &:hover {
-    //   background-color: white;
-    //   color: black;
-  
-      .ExperienceInner {
-        grid-template-rows: auto 1fr;
-  
-        .ExperienceImage {
-          height: auto;
-          opacity: 1;
-        }
-  
-        .ExperienceContent {
-          .copyDesc {
-            .copyLong{
-              opacity: 1;
-            }
-          }
-        }
+    .IDCover{
+      position: absolute;
+      top: 5px;
+      z-index: 2;
+      width: 100%;
+      height: auto;
+      fill: #fff;
+      // mix-blend-mode: difference;
+    }
+  }
+  .ExperienceImageContainer:hover{
+    img{
+      // clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      // transform: scale(1.25%);
+    }
+  }
+  .ExperienceContent{
+    h2{
+      padding: 20px 0px 10px 0px;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    .line2{
+      padding: 0px 0px 10px 0px;
+      display: flex;
+      justify-content: space-between;
+      align-items: left;
+      flex-direction: column;
+      gap: 10px;
+      h3{
+        font-size: 1rem;
+      }
+      p{
+        font-size: 0.75rem;
+        color: darkgrey;
+      }
+    }
+    .copyDesc{
+      padding: 5px 20px 10px 0px;
+      p{
+        margin-bottom: 20px;
       }
     }
   }
-  .Experience:hover{
-      border: 1px solid lightgreen;
-      background: linear-gradient(to right bottom, var(--background), rgba(144, 238, 144, 0.4), var(--background));
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 1024px) {
-    .Experience {
-      padding: 10px;
-      .ExperienceInner {
-        .ExperienceContent {
-          grid-template-columns: 1fr 1fr;
-          .copyDesc{
-            .copy, .copyLong{
-              padding-right: 0px;
-            }
-          }
-        }
-        .ExperienceImage {
-          grid-template-columns: 1fr;
-          .ExperienceImageLogo,
-          .ExperienceImageRole {
-            flex-direction: column;
-            align-items: center;
-  
-            img,
-            img:nth-child(2) {
-              width: 100%;
-              max-width: 220px;
-              height: auto;
-            }
-          }
-        }
-      }
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .Experience {
-      padding: 15px 10px;
-  
-      .ExperienceInner {
-        .ExperienceContent {
-          grid-template-columns: 1fr;
-          text-align: left;
-          gap: 10px;
-  
-          h3{
-            font-size: 1.25rem;
-          }
+}
 
-          h2 {
-            font-size: 1.75rem;
-            padding: 0px;
-          }
-  
-          .copy {
-            font-size: 1rem;
-            padding-right: 0;
-          }
-  
-          .skills,
-          .time {
-            font-size: 1rem;
-            text-align: left;
-          }
+// .Experience:nth-child(1){
+//   grid-column: 1 / span 2;
+// }
+
+@media(max-width: 1025px){
+  .Experience{
+    .ExperienceImageContainer{
+      width: auto;
+      img{
+        // transform: translateY(-50%);
+        left: 0px;
+        border-radius: 5px;
+      }
+    }
+    .ExperienceContent{
+      h2{
+        font-size: 1.5rem;
+      }
+      .line2{
+        padding: 0px;
+        h3{
+          font-size: 1.5rem;
         }
-  
-        .ExperienceImage {
-            margin-top: 15px;
-          grid-template-columns: 1fr 1fr;
-          gap: 5px;
-          .ExperienceImageLogo,
-          .ExperienceImageRole {
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-            img,
-            img:nth-child(2) {
-              width: 100%;
-              max-width: 180px;
-              height: auto;
-            }
-          }
+        p{
+          font-size: 1.25rem;
         }
+        }
+      .copyDesc{
+        p{
+          font-size: 1.25rem;
+        }
+      }
+      .skills{
+        font-size: 1.125rem;
       }
     }
   }
-  
+}
+
+
+@media(max-width: 650px){
+  .Experience{
+    .ExperienceImageContainer{
+      width: auto;
+      img{
+        // transform: translateY(-50%);
+        left: 0px;
+        border-radius: 5px;
+      }
+    }
+    .ExperienceContent{
+      h2{
+        font-size: 1.5rem;
+      }
+      .line2{
+        padding: 0px;
+        h3{
+          font-size: 1.25rem;
+        }
+        p{
+          font-size: 1.125rem;
+        }
+        }
+      .copyDesc{
+        p{
+          font-size: 1.125rem;
+        }
+      }
+      .skills{
+        font-size: 1rem;
+      }
+    }
+  }
+}

@@ -5,8 +5,11 @@ import Navbar from "../../components/Navbar/Navbar";
 import HeroSection from "../../components/HeroSection/HeroSection";
 import HeroNote from "../../components/HeroNote/HeroNote";
 import Background from "../../components/Background/Background";
+import BackgroundCursor from "../../components/BackgroundCursor/BackgroundCursor";
 import HeroExperiences from "../../components/HeroExperiences/HeroExperiences";
+import HeroBusinessImpact from "../../components/HeroBusinessImpact/HeroBusinessImpact"
 import HeroProjects from "../../components/HeroProjects/HeroProjects";
+import HeroCertifications from "../../components/HeroCretifications/HeroCertifications"
 import Blogs from "../../components/HeroBlogs/HeroBlogs";
 import Footer from "../../components/Footer/Footer";
 import HeroContact from "../../components/HeroContact/HeroContact";
@@ -21,12 +24,15 @@ export default function Home() {
         {/* <PreLoader></PreLoader> */}
         {/* <PreLoader2></PreLoader2> */}
         <PreLoader3></PreLoader3>
+        <BackgroundCursor />
         <Navbar></Navbar>
         <HeroSection></HeroSection>
         <HeroNote></HeroNote>
         <HeroExperiences></HeroExperiences>
+        <HeroBusinessImpact />
         <HeroProjects></HeroProjects>
-        <Blogs></Blogs>
+        <HeroCertifications></HeroCertifications>
+        {/* <Blogs></Blogs> */}
         <HeroContact></HeroContact>
         <Footer></Footer>
       </div>

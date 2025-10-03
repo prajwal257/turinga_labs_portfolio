@@ -1,0 +1,103 @@
+.HeroCertifications{
+    position: relative;
+    padding: 20px 10px 30vh 20px;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    h3{
+        grid-column: 1/ span 1;
+        font-size: 1.75rem;
+    }
+    .CertificatesContainer{
+        grid-column: 2 / span 1;
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        // .experienceContainer:nth-child(1){
+        //     grid-column: 1 / span 2;
+        // }
+        .Certificate{
+            position: relative;
+            // height: 30vh;
+            border-radius: 5px;
+            // border: 1px solid var(--foreground);
+            // padding: 10px;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 10px;
+            img{
+                position: absolute;
+                height: 2.5rem;
+                // width: 10vw;
+            }
+            h3{
+                margin-top: 5px;
+                grid-row: 2 / span 1;
+                font-size: 1.125rem;
+                line-height: 1.25rem;
+                font-weight: 600;
+            }
+            h4{
+                grid-row: 3 / span 1;
+                // text-align: right;
+                font-size: 1rem;
+                color: var(--offforeground);
+            }
+        }
+    }
+}
+
+
+@media(max-width: 1025px){
+  .HeroCertifications{
+    padding: 0px 20px 20vh 20px;
+    h3{
+        margin-bottom: 2rem;
+        grid-column: 1/ span 4;
+        font-size: 2.5rem;
+    }
+    .CertificatesContainer{
+        grid-column: 1 / span 3;
+        grid-template-columns: 1fr 1fr;
+        .Certificate{
+            img{
+                width: auto;
+            }
+            h3{
+                font-size: 1.5rem;
+                margin-bottom: 3px;
+            }
+            h4{
+                font-size: 1.25rem;
+            }
+        }
+    }
+  }
+}
+
+
+
+@media(max-width: 1025px){
+  .HeroCertifications{
+    padding: 0px 20px 20vh 20px;
+    h3{
+        margin-bottom: 2rem;
+        grid-column: 1/ span 4;
+        font-size: 1.5rem;
+    }
+    .CertificatesContainer{
+        grid-column: 1 / span 3;
+            .Certificate{
+            img{
+                width: auto;
+            }
+            h3{
+                font-size: 1.25rem;
+                margin-bottom: 3px;
+            }
+            h4{
+                font-size: 1.125rem;
+            }
+        }
+    }
+  }
+}

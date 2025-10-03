@@ -11,7 +11,7 @@ function Background() {
     const lightBase = "#f5f5f5";
     const base = prefersDark ? darkBase : lightBase;
 
-    const accents = ["#4B88A2", "#FF6F61", "#8E44AD", "#27AE60", "#E67E22"];
+    const accents = ["#1c779fff"];
     const randomAccent = accents[Math.floor(Math.random() * accents.length)];
 
     // Add alpha so backdrop-filter can blur what's behind

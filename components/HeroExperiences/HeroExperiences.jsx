@@ -8,6 +8,7 @@ function HeroExperiences(systemTheme) {
       "firmName": "IBM India Pvt. Ltd.",
       "title": "Automation Consultant: RPA Developer",
       "time": "Feb 2024 – Present", 
+      "location": "Mumbai",
       "copy": "Leading end-to-end RPA solutions using UiPath to automate repetitive business workflows.",
       "copyLong": "Collaborated with stakeholders to identify automation candidates and deliver high-impact solutions in a regulated environment.", 
       "skills": "UiPath; Python; SQL; Process Discovery;"
@@ -16,14 +17,18 @@ function HeroExperiences(systemTheme) {
       "firmName": "Dashamlav.in",
       "title": "Full Stack Developer",
       "time": "Oct 2023 – Nov 2023", 
+      "location": "",
       "copy": "Worked on a data-driven web dashboard for climate analytics. Built and deployed frontend components with SCSS and JavaScript, and integrated APIs for real-time data visualization.", 
+      "copyLong": "",
       "skills": "JavaScript; SCSS; REST APIs;"
     },
     { 
       "firmName": "Petlet.ai",
       "title": "Machine Learning Engineer",
       "time": "Mar 2023 – Sep 2023", 
+      "Location": "",
       "copy": "Designed and trained ML models for image classification and recommendation systems in a pet-care domain startup. Focused on model accuracy, dataset handling, and inference pipeline deployment.", 
+      "copyLocation": "",
       "skills": "Python; TensorFlow; Scikit-learn; FastAPI;"
     }
   ];
