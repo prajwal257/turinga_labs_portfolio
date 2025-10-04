@@ -7,16 +7,18 @@
     background: linear-gradient(to bottom, #ffffff00, var(--background));
     h3{
         grid-column: 2 /span 1;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
         line-height: 2.5rem;
         // padding-right: 150px;
         animation: textReveal;
         animation-timeline: view();
-        // animation-range: entry 0% entry 25%;
+        animation-range: normal 50%;
+        transform: translateY(150px);
+        animation-fill-mode: forwards;
     }
     @keyframes textReveal {
         from {
-            transform: translateY(20px);
+            transform: translateY(100px);
             opacity: 0;
         }
         to {

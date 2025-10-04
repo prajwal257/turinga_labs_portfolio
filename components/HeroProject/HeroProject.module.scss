@@ -1,8 +1,14 @@
 .HeroProject{
-    // padding-bottom: 10vh;
+  padding: 10px;
+  animation: textReveal;
+  animation-timeline: view();
+  animation-range: normal 50%;
+  transform: translateY(150px);
+  animation-fill-mode: forwards;
+  border-radius: 5px;
   .ProjectThumbnailContainer{
     position: relative;
-    background-color: var(--foreground);
+    // background-color: var(--foreground);
     overflow: hidden;
     border-radius: 5px;
     height: 40vh;
@@ -18,6 +24,11 @@
     }
   }
   .HeroProjectContent{
+    animation: textReveal;
+    animation-timeline: view();
+    animation-range: normal 50%;
+    transform: translateY(150px);
+    animation-fill-mode: forwards;
     h3{
       padding: 20px 0px 10px 0px;
       font-size: 1.25rem;
@@ -46,6 +57,16 @@
         color: darkgrey;
       }
     }
+    @keyframes textReveal {
+      from {
+          transform: translateY(100px);
+          opacity: 0;
+      }
+      to {
+          transform: translateY(0);
+          opacity: 1;
+      }
+    }
     .copyDesc{
       padding: 5px 20px 10px 0px;
       p{
@@ -53,6 +74,9 @@
       }
     }
   }
+}
+.HeroProject:hover{ 
+  background-color: var(--offbackground);
 }
 
 // .Experience:nth-child(1){

@@ -12,7 +12,7 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-  basePath: "/turinga_labs_portfolio",
+  // basePath: "/turinga_labs_portfolio",
 
   /**
    * Disable server-based image optimization. Next.js does not support

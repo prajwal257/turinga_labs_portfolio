@@ -24,12 +24,27 @@
             display: flex;
             justify-content: space-between;
             flex-direction: column;
+            animation: textReveal;
+            animation-timeline: view();
+            animation-range: normal 50%;
+            transform: translateY(150px);
+            animation-fill-mode: forwards;
             h3{
                 font-size: 8rem;
                 line-height: 8.5rem;
             }
             h4{
                 text-align: right;
+            }
+        }
+        @keyframes textReveal {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
             }
         }
     }

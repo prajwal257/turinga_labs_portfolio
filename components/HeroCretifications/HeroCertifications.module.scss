@@ -17,16 +17,20 @@
         // }
         .Certificate{
             position: relative;
-            // height: 30vh;
+            padding: 10px;
             border-radius: 5px;
-            // border: 1px solid var(--foreground);
-            // padding: 10px;
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
             gap: 10px;
+            animation: textReveal;
+            animation-timeline: view();
+            animation-range: normal 50%;
+            transform: translateY(150px);
+            animation-fill-mode: forwards;
             img{
+                padding: 10px 0px 0px 10px;
                 position: absolute;
-                height: 2.5rem;
+                height: 3rem;
                 // width: 10vw;
             }
             h3{
@@ -41,6 +45,19 @@
                 // text-align: right;
                 font-size: 1rem;
                 color: var(--offforeground);
+            }
+        }
+        .Certificate:hover{
+            background-color: var(--offbackground);
+        }
+        @keyframes textReveal {
+            from {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
             }
         }
     }

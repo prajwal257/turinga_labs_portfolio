@@ -19,7 +19,7 @@ function HeroExperience({firmName, title, time, location, copy, copyLong, skills
 
                 <p className={styles.copyLong}>{copyLong}</p>
               </div>
-              <p className={styles.skills}>{skills}</p>
+              {/* <p className={styles.skills}>{skills}</p> */}
             </div>
           {/* <div className={styles.ExperienceInner}>
             <div className={styles.ExperienceContent}>

@@ -31,7 +31,7 @@ function Footer() {
       </div>
       <Link href="github.com" className={styles.Github}>GitHub</Link>
       <div className={styles.Acknowledgement}>
-        <h6>Made in India, <br></br> by Prajwal Dwivedi.</h6>
+        <h6>Made in India, <br></br> by Prajwal Dwivedi.<br />Sponsored By: </h6><img src="./assets/TuringaLabsIcon.png" alt="Sponsor Logo" />
       </div>
       <Marquee className={styles.CopyrightMarkquee}>© Prajwal Dwivedi Portfolio</Marquee>
     </div>

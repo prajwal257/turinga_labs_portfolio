@@ -1,6 +1,11 @@
 .Experience{
   // padding-bottom: 10vh;
-    margin-top: 10px;
+  margin-top: 10px;
+  animation: textReveal;
+  animation-timeline: view();
+  animation-range: normal 50%;
+  transform: translateY(150px);
+  animation-fill-mode: forwards;
   .ExperienceImageContainer{
     position: relative;
     // background-color: var(--foreground);
@@ -70,6 +75,21 @@
       padding: 5px 20px 10px 0px;
       p{
         margin-bottom: 20px;
+        animation: textReveal;
+        animation-timeline: view();
+        animation-range: normal 50%;
+        transform: translateY(150px);
+        animation-fill-mode: forwards;
+      }
+      @keyframes textReveal {
+        from {
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
       }
     }
   }
