@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './HeroCertifications.module.scss'
+import Link from 'next/link'
 
 function HeroCertifications() {
 const Certifications = [
@@ -34,11 +35,11 @@ const Certifications = [
       <h3>Certificates:</h3>
       <div className={styles.CertificatesContainer}>
         {Certifications.map((Certificate, index)=> (
-          <div key={index} className={styles.Certificate}>
+          <Link href="https://www.linkedin.com/in/prajwaldwivedi257/details/certifications/" key={index} className={styles.Certificate}>
             <img src={`assets/certificate-logo-${index+1}.png`} alt={Certificate.provider+" Logo"} />
             <h3>{Certificate.title}</h3>
             <h4>{Certificate.provider}</h4>
-          </div>
+          </Link>
         ))}
       </div>
     </div>

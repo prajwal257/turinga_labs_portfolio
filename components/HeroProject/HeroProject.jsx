@@ -3,8 +3,9 @@ import styles from './HeroProject.module.scss'
 import Link from 'next/link'
 
 function HeroProject({title, tech, duration, description, index}) {
+  let LinkAddress = "/projects/"+index;
   return (
-    <div className={styles.HeroProject}>
+    <div href={LinkAddress} className={styles.HeroProject}>
       <div className={styles.ProjectThumbnailContainer}>
         <img src={`assets/poster-${index+1}.png`} alt={title} />
       </div>
@@ -19,7 +20,7 @@ function HeroProject({title, tech, duration, description, index}) {
             </div>
             <div className={styles.line2}>
               <h5>{description}</h5>
-              <Link href="/Projects" className={styles.ProjectReadMore}>Read More</Link>
+              {/* <Link href="/Projects" className={styles.ProjectReadMore}>Read More</Link> */}
             </div>
       </div>
         {/* <div className={styles.HeroProjectContent}>

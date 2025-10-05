@@ -24,7 +24,6 @@ function Footer() {
       <h6>Mumbai (IST)<br></br> {indiaTime.toUpperCase()}</h6>
       <div className={styles.ContactLinks}>
         <Link href="linkedin.com">
-          <img src="./assets/LinkArrowIcon.png" alt="Link Icon" />
           LinkedIn
         </Link>
         <Link href="Email.com">Email</Link>

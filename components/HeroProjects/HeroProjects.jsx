@@ -1,12 +1,14 @@
+"use client"
 import React from 'react'
 import styles from "./HeroProjects.module.scss"
 import HeroProject from '../HeroProject/HeroProject'
+import Link from 'next/link'
 
 function HeroProjects() {
 
   const Projects = [
     {
-      "title": "Studo Ghibly Image Converter",
+      "title": "Studio Ghibly Image Converter",
       "tech": ["python", "fastapi"],
       "duration": "Apr 2025",
       "description": "Project was made as an alternative to chatgpt, image to studio-ghibly like image converter." 
@@ -29,7 +31,9 @@ function HeroProjects() {
       <h3>Independent Projects:</h3>
       <div className={styles.ProjectsList}>
         {Projects.map((Project, index) => (
-          <HeroProject key={index} {...Project} index={index} />
+          <Link key={index} href={`/projects/${index+1}`}>
+            <HeroProject key={index} {...Project} index={index} />
+          </Link>
         ))}
       </div>
     </div>
