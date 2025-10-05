@@ -7,19 +7,19 @@ function HeroExperiences(systemTheme) {
     { 
       "firmName": "IBM India Pvt. Ltd.",
       "title": "Automation Consultant: RPA Developer",
-      "time": "Feb 2024 – Present", 
+      "time": "Dec 2023 – Present", 
       "location": "Mumbai",
-      "copy": "Leading end-to-end RPA solutions using UiPath to automate repetitive business workflows.",
-      "copyLong": "Collaborated with stakeholders to identify automation candidates and deliver high-impact solutions in a regulated environment.", 
+      "copy": "At IBM I developed an AI-driven pipeline that ingests FDA/EMA regulatory docs, parses and normalizes data, and powers a RAG system for pharma R&D.",
+      "copyLong": "My work focused on building the ingestion and PDF→text pipelines, entity extraction, embeddings, and dashboards, enabling analysts to query drug data in seconds. I also delivered 14+ UiPath/Python automations for supply chain and finance, cutting manual reporting work significantly.", 
       "skills": "UiPath; Python; SQL; Process Discovery;"
     },
     { 
       "firmName": "Dashamlav.in",
       "title": "Full Stack Developer",
       "time": "Oct 2023 – Nov 2023", 
-      "location": "",
-      "copy": "Worked on a data-driven web dashboard for climate analytics. Built and deployed frontend components with SCSS and JavaScript, and integrated APIs for real-time data visualization.", 
-      "copyLong": "",
+      "location": "Kanpur",
+      "copy": "I developed a fast, SEO-optimized website with Next.js and SCSS, focusing on performance, accessibility, and clean UX.", 
+      "copyLong": "The site improved search visibility and doubled traffic in three months, while automated deployments made it easy to update and maintain.",
       "skills": "JavaScript; SCSS; REST APIs;"
     },
     { 
@@ -27,8 +27,8 @@ function HeroExperiences(systemTheme) {
       "title": "Machine Learning Engineer",
       "time": "Mar 2023 – Sep 2023", 
       "Location": "",
-      "copy": "Designed and trained ML models for image classification and recommendation systems in a pet-care domain startup. Focused on model accuracy, dataset handling, and inference pipeline deployment.", 
-      "copyLocation": "",
+      "copy": "At PETLET I built an end-to-end ML pipeline for pet health prediction, covering data collection, TensorFlow training, and FastAPI inference APIs.", 
+      "copyLocation": "I deployed services on AWS with monitoring, integrated outputs into the product frontend, and iterated using vet feedback. The system achieved ~80% accuracy on validation sets and supported early health recommendations for users.",
       "skills": "Python; TensorFlow; Scikit-learn; FastAPI;"
     }
   ];

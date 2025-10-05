@@ -11,7 +11,7 @@ function HeroProjects() {
       "title": "Studio Ghibly Image Converter",
       "tech": ["python", "fastapi"],
       "duration": "Apr 2025",
-      "description": "Project was made as an alternative to chatgpt, image to studio-ghibly like image converter." 
+      "description": "I designed a FastAPI service that applies Studio Ghibli–inspired LoRA styles to input images. The pipeline supports prompt templating, batch generation, and metadata logging on a self-hosted GPU, demonstrating practical MLOps for generative AI." 
     },
     {
       "title": "Ai Notes and Summarization",

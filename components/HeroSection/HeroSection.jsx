@@ -14,11 +14,11 @@ function HeroSection() {
             <br />&<span> Automation</span>
             {/* <span className={styles.blinker}>_</span> */}
         </h1>
-        <button className={styles.CTAButton}>
+        {/* <button className={styles.CTAButton}>
           <img src="/assets/LinkArrowIcon.png" alt="Linkedin image" />
           <h4>Prajwal Dwivedi</h4>
           <Link href="linkedin.com" className={styles.Linkedin}>Linkedin</Link>
-        </button>
+        </button> */}
     </div>
   )
 }
