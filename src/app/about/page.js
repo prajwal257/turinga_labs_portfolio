@@ -16,7 +16,7 @@ export default function About() {
       <div className="font-[family-name:var(--font-geist-sans)] RootElement">
         <Navbar></Navbar>
         <AboutHeroSection></AboutHeroSection>
-        <AboutNote></AboutNote>
+        {/* <AboutNote></AboutNote> */}
         <AboutEducation></AboutEducation>
         <HeroContact></HeroContact>
         <Footer></Footer>

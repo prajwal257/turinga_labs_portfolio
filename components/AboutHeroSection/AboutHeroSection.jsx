@@ -5,7 +5,7 @@ function AboutHeroSection() {
   return (
     <div className={styles.AboutHeroSection}>
       {/* <h1>About Me.</h1> */}
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illum deleniti, et quibusdam omnis aliquid?</h1>
+        <h1>My peers think I’m crazy for chasing perfection, but the results speak louder than words.</h1>
         <div className={styles.HeroImageContainer}>
           <img src="./assets/HeroImage.jpg" alt="Author Image" />
         </div>

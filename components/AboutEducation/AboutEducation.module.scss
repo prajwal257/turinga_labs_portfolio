@@ -8,9 +8,27 @@
         font-size: 1.75rem;
     }
     .EducationContainer{
-        grid-column: 2 / span 1;
+        grid-column: 2 / span 2;
         display: grid;
         gap: 20px;
         grid-template-columns: 1fr 1fr;
+        .Education{
+            padding: 10px;
+            display: grid;
+            gap: 5px;
+            img{
+                height: 3rem;
+            }
+            h2{
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
+            h3{
+                font-size: 1.125rem;
+            }
+            p{
+                color: var(--offforeground);
+            }
+        }
     }
 }
