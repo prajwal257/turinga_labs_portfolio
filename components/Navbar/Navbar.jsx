@@ -9,7 +9,7 @@ export default function Navbar() {
                 <Link href="/" className={styles.NavbarElement}>Home</Link>
                 <Link href="/about" className={styles.NavbarElement}>About</Link>
             </div>
-            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer" className={`${styles.NavbarElement} ${styles.CTA}`}>Download Résumé</Link>
+            <Link href="./assets/resume.pdf" target="_blank" rel="noopener noreferrer" className={`${styles.NavbarElement} ${styles.CTA}`}>Download Résumé</Link>
         </div>
     );
 }
