@@ -5,6 +5,7 @@ import { ReactLenis } from "@studio-freight/react-lenis";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import HeroContact from "../HeroContact/HeroContact";
+import Link from 'next/link';
 
 function ProjectPage({id}) {
     let ProjectHeader = "";
@@ -17,7 +18,7 @@ function ProjectPage({id}) {
     } else{
         ProjectHeader = "";
         ProjectDescription = "";
-        ProjectCoverImage = "";
+        ProjectCoverImage = ""
     }
   return (
     <ReactLenis root>
@@ -31,6 +32,7 @@ function ProjectPage({id}) {
                 <img src={ProjectCoverImage} alt='Project Cover Image'/>
             </div>
         </div>
+        <Link href="/ghiblyImageConverter">Demo</Link>
         <HeroContact />
         <Footer />
     </ReactLenis>
