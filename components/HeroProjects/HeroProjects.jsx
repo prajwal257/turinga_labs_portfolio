@@ -9,15 +9,15 @@ function HeroProjects() {
   const Projects = [
     {
       "title": "Studio Ghibly Image Converter",
-      "tech": ["python", "fastapi"],
+      "tech": ["ComfyUI", " FastAPI"],
       "duration": "Apr 2025",
       "description": "I designed a FastAPI service that applies Studio Ghibli–inspired LoRA styles to input images. The pipeline supports prompt templating, batch generation, and metadata logging on a self-hosted GPU, demonstrating practical MLOps for generative AI." 
     },
     {
-      "title": "Ai Notes and Summarization",
-      "tech": ["RAG", "FastAPI", "React.js"],
-      "duration": "Mar 2025",
-      "description": "The summarization features let's users quickly read through the entire paage, watch long youtube videos and write note associated with them." 
+      "title": "Interview Intelligence: AI Audio Analyst",
+      "tech": ["RAG", " FastAPI", " React.js", " Claude API"],
+      "duration": "Mar 2026",
+      "description": "Drop in an interview recording, get a full candidate report in seconds. Produces multi-dimensional scoring across technical depth, communication clarity, and problem solving — with radar charts, behavioral hesitation signals, topic sentiment, and a timestamped interview timeline. Built on a RAG pipeline with FastAPI and React."
     },
     // {
     //   "title": "Covid-19 Mortality Risk Prediction",

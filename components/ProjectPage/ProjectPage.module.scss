@@ -3,33 +3,42 @@
     padding: 10px 20px 30vh 20px;
     display: grid;
     grid-template-columns: 20% 60% 20%;
-    h3{
-        display: flex;
-        .BackButton{
+    grid-row: 10fr 1fr;
+    .ProjectSubPageContainer{
+        grid-column: 2 / span 1;
+        h3{
             display: flex;
-            align-items: center;
+            .BackButton{
+                display: flex;
+                align-items: center;
+                img{
+                    height: 1.25rem;
+                }
+            }
+            grid-column: 1/ span 1;
+            font-size: 1.25rem;
+        }
+        .ProjectHeader{
+            grid-column: 2 / span 1;
+            padding: 10px;
+            display: grid;
+            gap: 20px;
+            h1{
+                font-size: 1.75rem;
+                font-weight: 600;
+            }
+            h3{
+                font-size: 1.25rem;
+                color: var(--offforeground);
+            }
             img{
-                height: 1.25rem;
+                border-radius: 5px;
             }
         }
-        grid-column: 1/ span 1;
-        font-size: 1.25rem;
     }
-    .ProjectHeader{
-        grid-column: 2 / span 1;
-        padding: 10px;
-        display: grid;
-        gap: 20px;
-        h1{
-            font-size: 1.75rem;
-            font-weight: 600;
-        }
-        h3{
-            font-size: 1.25rem;
-            color: var(--offforeground);
-        }
-        img{
-            border-radius: 5px;
-        }
+    Link{
+        grid-row: 2 / span 1;
+        position: absolute;
+        background-color: purple;
     }
 }

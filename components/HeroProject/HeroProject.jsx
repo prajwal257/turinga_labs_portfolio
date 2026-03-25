@@ -13,7 +13,7 @@ function HeroProject({title, tech, duration, description, index}) {
             <h3>{title}</h3>
             <div className={styles.line2}>
               <h4>
-                {/* {tech} */}
+                 {tech}
                 {/* <img src={`assets/tech-icon-${index+1}.png`} alt={tech} /> */}
               </h4>
               <h6>{duration}</h6>
