@@ -15,16 +15,16 @@ function HeroProjects() {
     },
     {
       "title": "Interview Intelligence: AI Audio Analyst",
-      "tech": ["RAG", " FastAPI", " React.js", " Claude API"],
+      "tech": ["Whisper", " FastAPI", " React.js", " LLaMA 8B"],
       "duration": "Mar 2026",
       "description": "Drop in an interview recording, get a full candidate report in seconds. Produces multi-dimensional scoring across technical depth, communication clarity, and problem solving — with radar charts, behavioral hesitation signals, topic sentiment, and a timestamped interview timeline. Built on a RAG pipeline with FastAPI and React."
     },
-    // {
-    //   "title": "Covid-19 Mortality Risk Prediction",
-    //   "tech": ["Jupyter-Lab", "FastAPI", "JS"],
-    //   "duration": "2022",
-    //   "description": "This project focuses on Machine Learning, the data we gathered was from US FDA resources, after EDA we were able to create a model to predict the mortality for a patient." 
-    // }
+    {
+      "title": "FineTuning Gemma3 1-B on RTX 4050",
+      "tech": ["PyTorch", "CUDA", "Obsidian"],
+      "duration": "Mar 2026",
+      "description": "Fine-tuned Gemma 3 1B on ~200 handwritten Obsidian notes using QLoRA on a 6GB GPU (RTX 4050)." 
+    }
   ]
   return (
     <div className={styles.HeroProjects}>
